@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import {Switch, Route, withRouter} from 'react-router-dom';
-import Profile from '../components/Profile';
+import Home from '../components/Home';
 import { connect } from 'react-redux';
 
-class AppRouter extends Component {
+class PublicRouter extends Component {
   render() {
     return (
       <Switch>
-        <Route exact path="/" component={Profile}/>
+        <Route exact path="/" component={Home}/>
       </Switch>
     )
   }
@@ -21,4 +21,4 @@ const mapStateToProps = state => ({
   ...state
 })
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(AppRouter));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(PublicRouter));
