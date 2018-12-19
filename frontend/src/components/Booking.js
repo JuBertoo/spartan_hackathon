@@ -6,7 +6,7 @@ export default class Booking extends Component {
       <div>
         <button>
 
-          <img>
+          <img/>
 
         </button>
         
