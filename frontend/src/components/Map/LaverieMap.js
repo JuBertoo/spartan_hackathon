@@ -33,11 +33,7 @@
 import React, { Component } from 'react'
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
 
-// state = {
-//   lat: number,
-//   lng: number,
-//   zoom: number,
-// }
+//
 
 export default class SimpleExample extends Component{
   state = {
