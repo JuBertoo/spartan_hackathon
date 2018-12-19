@@ -1,4 +1,4 @@
-import 'rc-progress/assets/index.css';
+// import 'rc-progress/assets/index.css';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Line, Circle } from 'rc-progress';
@@ -54,4 +54,4 @@ export default class myBookings extends Component {
   }
 }
 
-ReactDOM.render(<Example />, document.getElementById('__react-content'));
+ReactDOM.render(<myBookings />, document.getElementById('__react-content'));
