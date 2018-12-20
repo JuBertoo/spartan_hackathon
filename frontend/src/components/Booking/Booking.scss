@@ -1,0 +1,18 @@
+.bookingTitle {
+    background-color: blue;
+    padding-top:0.1vw;
+    padding-bottom:0.1vw;
+    color: white;
+    text-align:center;
+}
+.selectMachine {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+.selectService {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
