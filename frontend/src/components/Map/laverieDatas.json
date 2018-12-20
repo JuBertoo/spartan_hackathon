@@ -1,0 +1,66 @@
+[
+    {
+    "position":{
+        "lat": "43.3008396",
+        "lng": "5.367089399999941" 
+    },
+    "title":"WIHUB",
+    "adresse":"A place Francis Chirat, 13002 Marseille",
+    "image":"http://www.marseillelaverie.com/images/laverie_marseille_13004_13009_13011.png",
+    "plus": "+",
+    "horraire": "5h - Minuit",
+    "favorite":false,
+    "nbSechoir": "2",
+    "nbMachine": "6",
+    "nbCasier": "8",
+    "level": 2
+    },
+    {
+    "position":{
+        "lat": "43.300039",
+        "lng": "5.373688" 
+    },
+    "title":"La Lavandière",
+    "adresse":"19 rue Montbrion, 13002 Marseille ",
+    "image":"http://www.marseillelaverie.com/images/laverie_marseille_13004_13009_13011.png",
+    "plus": "",
+    "horraire": "7h - 20h",
+    "favorite":false,
+    "nbSechoir": "",
+    "nbMachine": "",
+    "nbCasier": "",
+    "level": 0
+    },
+    {
+    "position":{
+        "lat": "43.300725",
+        "lng": "5.371369" 
+    },
+    "title":"Le Lavoir ",
+    "adresse":"10 rue Jean Trinquet, 13002 Marseille",
+    "image":"http://www.marseillelaverie.com/images/laverie_marseille_13004_13009_13011.png",
+    "plus": "",
+    "horraire": "7h - 21h",
+    "favorite":false,
+    "nbSechoir": "",
+    "nbMachine": "",
+    "nbCasier": "",
+    "level": 0
+    },
+    {
+    "position":{
+        "lat": "43.300615",
+        "lng": "5.368921" 
+    },
+    "title":"Azur laverie",
+    "adresse":"9 rue Trigance, 13002 Marseille",
+    "image":"http://www.marseillelaverie.com/images/laverie_marseille_13004_13009_13011.png",
+    "plus": "",
+    "horraire": "7h - 21h",
+    "favorite":false,
+    "nbSechoir": "3",
+    "nbMachine": "7",
+    "nbCasier": "",
+    "level": 1
+    }
+]
