@@ -3,6 +3,7 @@
     padding-top:0.1vw;
     padding-bottom:0.1vw;
     color:white;
+    text-align: center;
 }
 
 // .ContactContainer {
@@ -18,23 +19,17 @@
 
 .ContactContainer {
     padding-top:15vw;
-    h1{
-    margin-top: 5vw;
-    font-size: 8vw;
-    }
     .contact-form {
     width: 80%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 12vw;
+    grid-gap: 10vw;
     .btn{
         padding: 2vw 20vw;
         border-radius: 90px;
     }
     .form-fields {
-        display:flex;
-        justify-content: center;
         position: relative;
         font-size: 5vw;
         .label {
@@ -53,12 +48,10 @@
         &:focus {
             outline: none;
         }
-        &:focus,
-        &.not-empty {
-            + .label {
-            transform: translateY(-5vw);
-            }
         }
+        .btn {
+            display:flex;
+            justify-content: center;
         }
     }
     } 
@@ -71,10 +64,14 @@
         justify-content: center;
         padding-top:2vw;
     }
+    .paiementDescription {
+        text-align:center;
+    }
     .form-fields button {
         display:flex;
         justify-content: center;
         padding: 2vw 20vw;
         border-radius: 90px;
     }
+    
 }
