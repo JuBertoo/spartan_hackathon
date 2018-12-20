@@ -1,0 +1,46 @@
+.onBoardingTitle {
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding-top:0.1vw;
+    padding-bottom:0.1vw;
+}
+
+.onBoardingLogo {
+    padding-top: 6vw;
+    text-align: center;
+}
+
+.onBoardingDescription {
+    text-align:center;
+    margin-left:5vw;
+    margin-right:5vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
+.onBoardingPictos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    .FirstPicto {
+        text-align: center;
+    }
+    .SecondPicto {
+        text-align: center;
+    }
+    .ThirdPicto {
+        text-align: center;
+    }
+}
+
+.onBoardingFleche {
+    text-align: right;
+    margin-right:5vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    img {
+        width:16vw;
+    }
+}
