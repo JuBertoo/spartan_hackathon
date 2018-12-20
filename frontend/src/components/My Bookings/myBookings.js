@@ -24,16 +24,6 @@ componentDidMount(){
   }
 
 
-
-  // constructor() {
-  //   super();
-  //   this.state = {
-  //     percent: 30,
-  //     color: '#3FC7FA',
-  //   };
-  //   this.changeState = this.changeState.bind(this);
-  // }
-
   render() {
     const containerStyle = {
       width: 'auto',
@@ -52,7 +42,7 @@ componentDidMount(){
           <div className="myBookingLavage">
             <div className="progressLavage">
               <div style={circleContainerStyle}>
-              <Circle percent={this.state.count} strokeWidth="10" trailWidth="10" strokeColor={this.state.color} />
+              <Circle percent={this.state.count} strokeWidth="10" trailWidth="10" strokeColor={this.state.color} trailColor={"#0a2b33"} />
               </div>
               <p className="counterMin">{this.state.count}min</p>
             </div>
@@ -73,7 +63,7 @@ componentDidMount(){
             </div>
             <div className="progressSechage">
               <div style={circleContainerStyle}>
-              <Circle percent={this.state.countSechage} strokeWidth="10" trailWidth="10" strokeColor={this.state.color} />
+              <Circle percent={this.state.countSechage} strokeWidth="10" trailWidth="10" strokeColor={this.state.color} trailColor={"#0a2b33"}/>
               </div>
               <p className="counterMin">-</p>
             </div>
@@ -81,7 +71,7 @@ componentDidMount(){
           <div className="myBookingLockers">
             <div className="progressLockers">
               <div style={containerStyle}>
-                <Line percent={this.state.count} strokeWidth="8" trailWidth="8" strokeColor={this.state.color} />
+                <Line percent={this.state.count} strokeWidth="8" trailWidth="8" strokeColor={this.state.color} trailColor={"white"} />
               </div>
             </div>
             <div className="LockersText">

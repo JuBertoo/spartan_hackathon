@@ -4,18 +4,39 @@ import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
 import laverieDatas from './laverieDatas.json'
 import { renderToStaticMarkup } from "react-dom/server";
 import { divIcon } from "leaflet";
+
 import './LaverieMap.scss'
 
 const setIcon = (integer, color) => {
   return (
     divIcon({
       html: renderToStaticMarkup(
-        <i style={{color: color}} className="fa fa-map-marker-alt fa-3x">{integer}</i>
+        <div style={{position: "relative", width: 60, height: 60}}>
+          <i style={{color: color}} className="fa fa-map-marker-alt fa-3x"/>
+          <span style={{color: 'white', fontSize: '2em', position: "absolute", left: 7}} >{integer}</span>
+        </div>
       )
     })
   )
 }
 
+// setMarkerColor() {
+//   if (color === 'red') return MyMarker
+//   else if (color === 'blue') return MyMarker
+//   else return MyMarker
+// }
+
+// return (
+//   divIcon({
+//     html: renderToStaticMarkup(
+//       <div style={{position: "relative", width: 60, height: 60}}>
+//         <img src={setMarkerColor()} style={{width: 60, height: 60}} />
+//         <span style={{color: 'white', fontSize: '2em', position: "absolute", left: 7}} >{integer}</span>
+//       </div>
+//     )
+//   })
+// )
+// }
 
 export default class LaverieMap extends Component{
   state = {

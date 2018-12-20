@@ -4,9 +4,7 @@ import Home from '../components/Home';
 import { connect } from 'react-redux';
 import Booking from '../components/Booking/Booking'
 import myBookings from '../components/My Bookings/myBookings';
-
 import PersonalData from '../components/Personal Data/PersonalData';
-
 import OnBoarding from '../components/On Boarding/OnBoarding';
 import LaverieMap from '../components/Map/LaverieMap';
 

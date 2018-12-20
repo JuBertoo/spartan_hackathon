@@ -2,13 +2,16 @@
     h1{
         text-align:center;
         color:white;
+        font-size: 6vw;
     }
-    background-color:#465180;
+    background-color:#0a2b33;
     padding-top:0.1vw;
     padding-bottom:0.1vw;
+    font-family: 'Lato', sans-serif;
 }
 
 .myBookingContainer {
+    font-family: 'Lato', sans-serif;
     h3 {
         font-size:5vw;
     }
@@ -29,7 +32,7 @@
             .counterMin {
                 position: absolute;
                 margin-top:13vw;
-                color:#3FC7FA;
+                color:#00a5d2;
                 font-weight: bold;
             }
         }
@@ -50,7 +53,7 @@
         display:grid;
         grid-template-columns: repeat(2, 50%);
         grid-gap:1vw;
-        background-color:grey;
+        background-color: grey;
         padding-bottom:5vw;
         padding-top:5vw;
         .progressSechage {
@@ -78,6 +81,7 @@
         display: grid;
         grid-template-columns: repeat(2, 50%);
         grid-gap:1vw;
+        background-color:  #d6d6d6;
         padding-bottom:5vw;
         padding-top:5vw;
         .progressLockers {
