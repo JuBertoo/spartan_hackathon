@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import './Booking.scss'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import{NavLink} from 'react-router-dom';
+
 
 export default class Booking extends Component {
   constructor(props) {
@@ -89,11 +91,13 @@ export default class Booking extends Component {
             timeCaption="time"
             />
         </div>
-        <div className="selectDate">
-          <button>
-            Confirmer
-          </button>
-        </div>
+        <NavLink to={{pathname:"/personaldata"}}>
+          <div className="selectDate">
+            <button>
+              Confirmer
+            </button>
+          </div>
+        </NavLink>
 
 
 

@@ -30,11 +30,11 @@ export default class OnBoarding extends Component {
 							<p>Drop & Pick up</p>				
 						</div>
 					</div>
-					<Navlink to={{pathname:"/map"}}>
+					<NavLink to={{pathname:"/map"}}>
 						<div className="onBoardingFleche">
 							<img src={require('./arrow.png')}/>
 						</div>
-					</Navlink>
+					</NavLink>
         
       </div>
     )
