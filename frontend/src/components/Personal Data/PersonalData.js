@@ -8,6 +8,8 @@ import {
   formatFormData,
 } from './utils';
 import './PersonalData.scss';
+import{NavLink} from 'react-router-dom';
+
 
 export default class PersonalData extends Component {
   state = {
@@ -66,6 +68,11 @@ export default class PersonalData extends Component {
     return (
       <div>
         <div className="dataTitle">
+          <NavLink to={{pathname:"/booking"}}>
+              <div className="backButton">
+                  <img src={require('./left-arrow.png')}/>
+              </div>
+          </NavLink>
           <h1>INFOS PERSONNELLES</h1>
         </div>
         <div className="ContactContainer">
