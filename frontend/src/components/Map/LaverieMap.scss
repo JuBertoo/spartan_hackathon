@@ -1,0 +1,36 @@
+.leaflet-container {
+    height: 50vh;
+    width: 100%;
+  }
+  
+  .leaflet-div-icon {
+    background: transparent;
+    border: none;
+  }
+
+  .hidden{
+      visibility: hidden;
+  }
+
+  .buttonType{
+      display: flex;
+      justify-content: center;
+  }
+  button{
+      z-index: 1000;
+    
+  }
+.adresseContainer{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+.modeImage{
+    display: flex;
+    justify-content: center;
+}
