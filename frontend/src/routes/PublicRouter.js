@@ -8,6 +8,7 @@ import myBookings from '../components/My Bookings/myBookings';
 import PersonalData from '../components/Personal Data/PersonalData';
 
 import OnBoarding from '../components/On Boarding/OnBoarding';
+import Map from '../components/Map/LaverieMap';
 
 
 class PublicRouter extends Component {
@@ -15,17 +16,10 @@ class PublicRouter extends Component {
     return (
       <Switch>
         <Route path="/booking" component={Booking}/>
-
-     
-        <Route path="/booking" component={Booking}/>
-
-
         <Route path="/personaldata" component={PersonalData}/>
-
         <Route path="/onboarding" component={OnBoarding}/>
         <Route exact path="/" component={Home}/>
-
-
+        <Route path="/map" component={Map}/>
         <Route path="/reservations" component={myBookings}/>
       </Switch>
     )
