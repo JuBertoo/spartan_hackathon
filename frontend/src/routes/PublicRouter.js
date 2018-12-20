@@ -3,6 +3,7 @@ import {Switch, Route, withRouter} from 'react-router-dom';
 import Home from '../components/Home';
 import { connect } from 'react-redux';
 import Booking from '../components/Booking/Booking'
+import myBookings from '../components/My Bookings/myBookings';
 
 import PersonalData from '../components/Personal Data/PersonalData';
 
@@ -25,6 +26,7 @@ class PublicRouter extends Component {
         <Route exact path="/" component={Home}/>
 
 
+        <Route path="/reservations" component={myBookings}/>
       </Switch>
     )
   }
