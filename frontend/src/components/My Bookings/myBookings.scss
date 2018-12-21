@@ -1,32 +1,16 @@
 .myBookingHeader {
     h1{
-        text-align:center;
         color:white;
         font-size: 6vw;
-       
-        align-self: center;
     }
     background-color:#0a2b33;
     padding-top:0.1vw;
     padding-bottom:0.1vw;
     font-family: 'Lato', sans-serif;
     height: 20vw;
-    display: grid;
-    grid-template-columns: 15% 70% 15%;
-    
-    
-    .arrow{
-        width: 30px;
-        height: 30px;
-        display: flex;
-        margin: auto;
-    }
-    .user{
-        width: 30px;
-        height: 30px;
-        display: flex;
-        margin: auto;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .myBookingContainer {
