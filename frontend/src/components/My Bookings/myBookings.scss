@@ -3,17 +3,40 @@
         text-align:center;
         color:white;
         font-size: 6vw;
+       
+        align-self: center;
     }
     background-color:#0a2b33;
     padding-top:0.1vw;
     padding-bottom:0.1vw;
     font-family: 'Lato', sans-serif;
+    height: 20vw;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    
+    
+    .arrow{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        margin: auto;
+    }
+    .user{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        margin: auto;
+    }
 }
 
 .myBookingContainer {
     font-family: 'Lato', sans-serif;
+    color: #0a2b33;
     h3 {
         font-size:5vw;
+    }
+    p{
+        font-size: 4vw;
     }
     .myBookingLavage {
         display:grid;
@@ -21,6 +44,7 @@
         grid-gap:1vw;
         padding-bottom:5vw;
         padding-top:5vw;
+        background-color: #f5f5f5;
         .progressLavage {
             grid-column: 1;
             display:flex;
@@ -53,7 +77,7 @@
         display:grid;
         grid-template-columns: repeat(2, 50%);
         grid-gap:1vw;
-        background-color: grey;
+        background-color: #ebebeb;
         padding-bottom:5vw;
         padding-top:5vw;
         .progressSechage {
@@ -81,7 +105,7 @@
         display: grid;
         grid-template-columns: repeat(2, 50%);
         grid-gap:1vw;
-        background-color:  #d6d6d6;
+        background-color: #d6d6d6;
         padding-bottom:5vw;
         padding-top:5vw;
         .progressLockers {
@@ -103,12 +127,13 @@
         padding-top:8vw;
         display: flex;
         justify-content: center;
-        background-color:grey;
+        background-color:#c1c1c1;
+        font-family: 'Lato', sans-serif;
         button {
             border-radius:3vw;
             padding:5vw;
-            font-size:4vw;
-            background-color: #465180;
+            font-size:3.5vw;
+            background-color: #0a2b33;
             color: white;
         }
     }

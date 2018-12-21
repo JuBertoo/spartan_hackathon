@@ -7,6 +7,7 @@ import myBookings from '../components/My Bookings/myBookings';
 import PersonalData from '../components/Personal Data/PersonalData';
 import OnBoarding from '../components/On Boarding/OnBoarding';
 import LaverieMap from '../components/Map/LaverieMap';
+import Recap from '../components/Recap/Recap'
 
 
 class PublicRouter extends Component {
@@ -20,6 +21,7 @@ class PublicRouter extends Component {
         <Route exact path="/" component={Home}/>
         <Route path="/reservations" component={myBookings}/>
         <Route path="/map" component={LaverieMap}/>
+        <Route path="/recap" component={Recap}/>
       </Switch>
         
     )

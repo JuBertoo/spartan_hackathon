@@ -36,7 +36,9 @@ componentDidMount(){
     return (
       <div>
         <div className="myBookingHeader">
+        <img className="arrow" src={require("../../assets/img/WiHub-11.png")}/>
           <h1>MES RÉSERVATIONS</h1>
+          <img className="user" src={require("../../assets/img/WiHub-12.png")}/>
         </div>
         <div className="myBookingContainer">
           <div className="myBookingLavage">

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './OnBoarding.scss'
+import{NavLink} from 'react-router-dom';
+
 
 export default class OnBoarding extends Component {
   render() {
@@ -28,9 +30,11 @@ export default class OnBoarding extends Component {
 							<p>Drop & Pick up</p>				
 						</div>
 					</div>
-					<div className="onBoardingFleche">
-						<img src={require('./arrow.png')}/>
-					</div>
+					<NavLink to={{pathname:"/map"}}>
+						<div className="onBoardingFleche">
+							<img src={require('./arrow.png')}/>
+						</div>
+					</NavLink>
         
       </div>
     )
