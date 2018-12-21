@@ -1,5 +1,46 @@
+.laverieMapContainer{
+
+    background-color: rgba($color: #0a2b33, $alpha: 0.2);
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+
+
+.laverieMapHeader {
+    h1{
+        text-align:center;
+        color:white;
+        font-size: 5vw;
+       
+        align-self: center;
+    }
+    background-color:#0a2b33;
+    padding-top:0.1vw;
+    padding-bottom:0.1vw;
+    font-family: 'Lato', sans-serif;
+    height: 20vw;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    
+    
+    .arrow{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        margin: auto;
+    }
+    .user{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        margin: auto;
+    }
+}
+
+
+
 .leaflet-container {
-    height: 50vh;
+    height: 58vh;
     width: 100%;
   }
   
@@ -9,28 +50,99 @@
   }
 
   .hidden{
-      visibility: hidden;
+      display: none;
   }
 
   .buttonType{
       display: flex;
       justify-content: center;
   }
-  button{
+  .laveLinge, .secheLinge, .casier{
       z-index: 1000;
+      width: 13vw;
+      height: 13vw;
+      margin: 3vw;
+      border-radius: 5px;
+    
+  }
+ 
+  .laveLinge:hover, .secheLinge:hover, .casier:hover{
+      border-bottom: 4px solid #0a2b33;
+      padding-bottom: 1vw;
     
   }
 .adresseContainer{
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 30% 70%;
+    margin: 3vw 2vw;
+    padding: 2vw 2vw;
+    grid-gap: 3vw;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: white;
+    height: 20vw;
+
+    .adresse{
+        align-self: center;
+        h3{
+            margin: 0px;
+            color:#3FC7FA;
+        }
+        p{
+            margin: 0px;
+            font-size: 3.5vw;
+        }
+    }
+    img {
+        align-self: center;
+        max-width: 100%;
+        border-radius: 10px;
+    
+    }
+   
+    
 }
-
-img {
-    max-width: 100%;
-
-}
-
 .modeImage{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 3vw 2vw;
+    grid-gap: 2vw;
+    height: 20vw;
+
+    button {
+        border-radius:3vw;
+        padding:5vw;
+        font-size:3.5vw;
+        background-color: #0a2b33;
+        color: white;
+    }
+}
+
+.reservation{
+    color: #0a2b33;
+    // display: flex;
+    // justify-content: center; 
+    text-align: center;
+    
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+
+    .click{
+        width:15vw;
+        align-self: center;
+
+    }
+    
+    h3{
+    font-size: 5vw;
+    margin: 0px;
+    align-self: center;
+    
+
+    }
+}
+.reservationHidden{
+    display: none;
+}
+
 }
