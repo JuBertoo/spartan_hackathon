@@ -57,7 +57,7 @@ componentDidMount(){
             </div>
             <div className="LavageText">
               <h3 className="titresBooking">LAVAGE</h3>
-              <p className="textBooking">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              <p className="textBooking">1 lavage 10kg en cours</p>
               <div className="buttonLavage">
                 <button>
                   DÉBLOQUER LE HUBLOT
