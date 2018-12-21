@@ -252,7 +252,7 @@ export default class PersonalData extends Component {
                     </div>
                   </div>
                   <div className="paiementDescription">
-                    <p>Vous allez réserver une machine à laver, le transfert, le séchage & le pliage pour un lavage de 10kg le 25/12/18 à 9h30 pour un prix total TTC de 23.00 euros</p>
+                    <p>Vous allez réserver une machine à laver, le transfert, le séchage & le pliage pour un lavage de 10kg le 25/12/18 à 9h30 pour un prix total TTC de 16.00 euros</p>
                   </div>
                   {/* <input type="hidden" name="issuer" value={issuer} /> */}
                   <div className="form-fields button">
