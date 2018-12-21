@@ -8,7 +8,9 @@ export default class Home extends Component {
     return (
       <div className="homePage">
         <div className="logoHome">
-          <img src={require('./WiHub-05.png')}/>
+          <div className="logotop">
+            <img src={require('./WiHub-05.png')}/>
+          </div>
           <img src={require('./WiHub-06.png')}/>
         </div>
         {/* <div className="logoText">

@@ -9,7 +9,13 @@ export default class Booking extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      startDate: new Date()
+      startDate: new Date(),
+      selected1: false,
+      selected2: false,
+      selected3: false,
+      button1: false,
+      button2: false,
+      button3: false,
     };
     this.handleChange = this.handleChange.bind(this);
   }
@@ -20,7 +26,38 @@ export default class Booking extends Component {
     });
   }
 
+  getSelected1(){
+    this.setState({selected1:!this.state.selected1, selected2:false, selected3:false });
+  }
+  getSelected2(){
+    this.setState({selected2:!this.state.selected2, selected1:false, selected3:false });
+    
+  }
+  getSelected3(){
+    this.setState({selected3:!this.state.selected3, selected1:false, selected2:false });
+    
+  }
+  getButton1(){
+    this.setState({button1:!this.state.button1});
+  }
+  getButton2(){
+    this.setState({button2:!this.state.button2});
+    
+  }
+  getButton3(){
+    this.setState({button3:!this.state.button3});
+    
+  }
+
   render() {
+    let selectedS = this.state.selected1 ? "selectedS" : "unselectedS"
+    let selectedM = this.state.selected2 ? "selectedM" : "unselectedM"
+    let selectedL = this.state.selected3 ? "selectedL" : "unselectedL"
+    
+    let button1 = this.state.button1 ? "button1O" : "button1F"
+    let button2 = this.state.button2 ? "button2O" : "button2F"
+    let button3 = this.state.button3 ? "button3O" : "button3F"
+
     return (
       <div className="BookingContainer">
         <div className="BookingHeader">
@@ -36,18 +73,18 @@ export default class Booking extends Component {
         <div class="selectMachine">
           <div className="pictoMachine">
             <button>
-            <img className="laveLingeS" src={require("../../assets/img/washing-machine.png")}/>
+            <img className={selectedS} onClick={()=>this.getSelected1()} src={require("../../assets/img/washing-machine.png")}/>
             </button>
             <p> - 8kg</p>
           </div>
           <div className="pictoMachine">
             <button>
-              <img className="laveLingeM" src={require("../../assets/img/washing-machine.png")}/>
+              <img className={selectedM} onClick={()=>this.getSelected2()} src={require("../../assets/img/washing-machine.png")}/>
             </button>
             <p>10kg</p>
           </div><div className="pictoMachine">
             <button>
-            <img className="laveLingeL" src={require("../../assets/img/washing-machine.png")}/>
+            <img className={selectedL} onClick={()=>this.getSelected3()} src={require("../../assets/img/washing-machine.png")}/>
             </button>
             <p>15+kg</p>
           </div>
@@ -55,18 +92,18 @@ export default class Booking extends Component {
         <h3 className="Title2">Sélectionnez vos services:</h3>
         <div class="selectService">
           <div className="serviceMachine">
-            <button>
+            <button className="button1" onClick={()=>this.getButton1()}>
             <p>Réservation machine à laver</p>
-            </button>
+            </button >
           </div>
           <div className="serviceMachine">
-            <button>
+            <button className={button2} onClick={()=>this.getButton2()}>
             <img className="Plus" src={require("../../assets/img/plus.png")}/>
               <p>Transfert machine à laver/séchoir</p>
             </button>
           </div>
           <div className="serviceMachine">
-            <button>
+            <button className={button3} onClick={()=>this.getButton3()}>
             <img className="Plus" src={require("../../assets/img/plus.png")}/>
               <p>Pliage et rangement dans casier</p>
             </button>
