@@ -22,47 +22,52 @@ export default class Booking extends Component {
 
   render() {
     return (
-      <div>
-        <div className="bookingTitle">
+      <div className="BookingContainer">
+        <div className="BookingHeader">
+        <img className="arrow" src={require("../../assets/img/WiHub-11.png")}/>
           <h1>RÉSERVER</h1>
+          <img className="user" src={require("../../assets/img/WiHub-12.png")}/>
         </div>
-        <h3>De quelle taille de machine avez-vous besoin ?</h3>
+        <h3 className="Title1">Selectionner la taille de votre lave-linge :</h3>
         <div class="selectMachine">
-          <div className="pictoMachine1">
+          <div className="pictoMachine">
             <button>
-              <img src="https://via.placeholder.com/60"/>
+            <img className="laveLingeS" src={require("../../assets/img/washing-machine.png")}/>
             </button>
             <p> - 8kg</p>
           </div>
-          <div className="pictoMachine1">
+          <div className="pictoMachine">
             <button>
-              <img src="https://via.placeholder.com/70"/>
+              <img className="laveLingeM" src={require("../../assets/img/washing-machine.png")}/>
             </button>
             <p>10kg</p>
-          </div><div className="pictoMachine1">
+          </div><div className="pictoMachine">
             <button>
-              <img src="https://via.placeholder.com/80"/>
+            <img className="laveLingeL" src={require("../../assets/img/washing-machine.png")}/>
             </button>
             <p>15+kg</p>
           </div>
         </div>
-        <h3>Sélectionnez vos services pour gagner du temps</h3>
+        <h3 className="Title2">Sélectionnez vos services:</h3>
         <div class="selectService">
           <div className="serviceMachine">
             <button>
-              Réservation machine à laver
+            <p>Réservation machine à laver</p>
             </button>
           </div>
           <div className="serviceMachine">
             <button>
-              Transfert machine à laver/séchoir
+            <img className="Plus" src={require("../../assets/img/plus.png")}/>
+              <p>Transfert machine à laver/séchoir</p>
             </button>
           </div>
           <div className="serviceMachine">
             <button>
-              Pliage
+            <img className="Plus" src={require("../../assets/img/plus.png")}/>
+              <p>Pliage et rangement dans casier</p>
             </button>
           </div>
+        </div>
           <div className="form-fields demo">
             <input 
               type="checkbox"
@@ -77,8 +82,8 @@ export default class Booking extends Component {
             Séchage inclus
             </label>
             </div>
-        </div>
-        <h3>Quand désirez-vous laver votre linge ?</h3>
+        
+        <h3 className="Title3">Quand désirez-vous laver votre linge ?</h3>
         <div className="calendarPicker">
             <DatePicker
             selected={this.state.startDate}
