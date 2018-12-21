@@ -1,12 +1,46 @@
-.dataTitle {
-    background-color: blue;
+.dataHeader {
+    font-family: 'Lato', sans-serif;
+    h1{
+        text-align:center;
+        color:white;
+        font-size: 6vw;
+        align-self: center;
+    }
+
+    background-color:#0a2b33;
     padding-top:0.1vw;
     padding-bottom:0.1vw;
-    color:white;
-    text-align: center;
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    font-family: 'Lato', sans-serif;
+    height: 20vw;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    
+    
+    .arrow, .IconLink{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        margin: auto;
+    }
+    .user{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        margin: auto;
+    }
 }
+
+
+
+// .dataTitle {
+//     background-color: blue;
+//     padding-top:0.1vw;
+//     padding-bottom:0.1vw;
+//     color:white;
+//     text-align: center;
+//     display:grid;
+//     grid-template-columns: repeat(2, 1fr);
+// }
 
 // .ContactContainer {
 //     margin-top:5vw;
@@ -20,6 +54,8 @@
 // }
 
 .ContactContainer {
+    font-family: 'Lato', sans-serif;
+    background-color:#ebebeb;
     padding-top:15vw;
     .contact-form {
     width: 80%;
@@ -27,13 +63,16 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10vw;
+    margin-bottom: 2vw;
+   
+
     .btn{
         padding: 2vw 20vw;
         border-radius: 90px;
     }
     .form-fields {
         position: relative;
-        font-size: 5vw;
+        font-size: 3vw;
         .label {
         margin-top: -8vw;
         position: absolute;
@@ -41,7 +80,15 @@
         cursor: text;
         transition: transform .2s ease-in-out;
         }
+        input{
+            width:78vw;
+        }
+        label{
+            color: #0a2b33;
+        }
+
         .input-text {
+        
         display: block;
         width: 100%;
         height: 5vw;
@@ -60,20 +107,82 @@
 }
 
 .App-payment {
-    padding-top:5vw;
-    .form-group {
-        display:flex;
-        justify-content: center;
-        padding-top:2vw;
-    }
-    .paiementDescription {
-        text-align:center;
-    }
-    .form-fields button {
-        display:flex;
-        justify-content: center;
-        padding: 2vw 20vw;
-        border-radius: 90px;
-    }
-    
+    margin-top: 7vw;
 }
+
+    
+.paymentinfosContainer {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10vw;
+    margin-top: 13vw;
+    .form-group {
+        
+        margin-bottom: 9vw;
+        position: relative;
+        font-size: 3vw;
+
+        .label {
+        margin-top: -8vw;
+        position: absolute;
+        font-size: 5vw;
+        cursor: text;
+        transition: transform .2s ease-in-out;
+        }
+        input{
+            width:78vw;
+        }
+        label{
+            color: #0a2b33;
+        }
+
+        .input-text {
+        
+        display: block;
+        width: 100%;
+        height: 5vw;
+        border-width: 0 0 2px 0;
+        font-size: 5vw;          
+        &:focus {
+            outline: none;
+        }
+        }
+        .btn {
+            display:flex;
+            justify-content: center;
+        }
+    }
+}
+
+.paiementDescription{
+    color: #0a2b33;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+
+}
+
+.buttonPayment {
+    font-family: 'Lato', sans-serif;
+    padding-bottom:6vw;
+    padding-top:4vw;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    button {
+        border-radius:3vw;
+        font-size:4.5vw;
+        background-color: #0a2b33;
+        color: white;
+        text-decoration: none;
+        padding: 3vw 16vw;
+
+
+    }
+}
+
+
+
+    
