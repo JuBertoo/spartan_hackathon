@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Line, Circle } from 'rc-progress';
 import './myBookings.scss';
+import{NavLink} from 'react-router-dom';
 
 export default class myBookings extends Component {
   constructor(props){
@@ -36,9 +37,7 @@ componentDidMount(){
     return (
       <div>
         <div className="myBookingHeader">
-        <img className="arrow" src={require("../../assets/img/WiHub-11.png")}/>
           <h1>MES RÉSERVATIONS</h1>
-          <img className="user" src={require("../../assets/img/WiHub-12.png")}/>
         </div>
         <div className="myBookingContainer">
           <div className="myBookingLavage">
@@ -82,9 +81,11 @@ componentDidMount(){
             </div>            
           </div>
           <div className="buttonBooking">
-            <button>
-              LOCALISER LES LAVERIES AUTOUR DE MOI
-            </button>
+            <NavLink to={{pathname:"/map"}}>
+              <button>
+                LOCALISER LES LAVERIES AUTOUR DE MOI
+              </button>
+            </NavLink>
           </div>
         
         </div>
