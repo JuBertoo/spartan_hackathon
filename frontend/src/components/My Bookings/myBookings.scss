@@ -54,21 +54,36 @@
             margin-left:2vw;
         }
         .buttonLavage{
-        button {
+            // .unlocked{
+            //     width:10vw;
+            // }
+            // .locked{
+            //     display:none;
+            // }
+            .debloqueBouton{
+                width:20vw;
+                margin-left:12vw;
+            }
+        // button {
       
-                .debloqueFalse{
-                    display: none;
+        //         .debloqueFalse{
+        //             display: none;
                 
-            }
-                .debloqueTrue{
-                    width: 32vw;
-                    position: absolute;
-                    right: 59vw;
-                    bottom: 122vw;
+        //     }
+        //         .debloqueTrue{
+        //             width: 32vw;
+        //             position: absolute;
+        //             right: 59vw;
+        //             bottom: 122vw;
                 
-            }
+        //     }
+
+        //     img {
+        //         width:5vw;
+        //     }
           
-        }
+        // }
+
      }
     }
 

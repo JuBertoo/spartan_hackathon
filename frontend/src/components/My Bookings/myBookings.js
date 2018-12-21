@@ -12,6 +12,7 @@ export default class myBookings extends Component {
             count : 0,
             color: '#3FC7FA',
             countSechage : 0,
+            // debloque: false,
     };
   }
 componentDidMount(){
@@ -30,6 +31,7 @@ componentDidMount(){
   }
 
 
+
   render() {
     const containerStyle = {
       width: 'auto',
@@ -41,7 +43,9 @@ componentDidMount(){
     };
     if(this.state.count >= 100){
       this.startCounter()
+      // this.setState({debloque:!this.state.debloque})
     }
+    // let deblocked = this.state.debloque? "unlocked":"locked"
 
     return (
       <div>
@@ -60,9 +64,7 @@ componentDidMount(){
               <h3 className="titresBooking">LAVAGE</h3>
               <p className="textBooking">1 lavage 10kg en cours</p>
               <div className="buttonLavage">
-                <button>
-                <img className="debloqueTrue" src={require("../../assets/img/WiHub-13.png")}/>
-                </button>
+                <img src={require("../../assets/img/WiHub-13.png")} className="debloqueBouton"/>
               </div>
             </div>          
           </div>
