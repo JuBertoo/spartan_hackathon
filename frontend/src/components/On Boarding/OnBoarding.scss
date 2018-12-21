@@ -1,0 +1,84 @@
+.onBoardingContainer {
+    min-height:100vh;
+    .onBoardingTitle {
+        h1{
+            color:white;
+            font-size: 6vw;
+        }
+        background-color:#0a2b33;
+        padding-top:0.1vw;
+        padding-bottom:0.1vw;
+        font-family: 'Lato', sans-serif;
+        height: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .onBoardingLogo {
+        text-align: center;
+        display:grid;
+        grid-template-rows: repeat(2,1fr);
+        margin-top:5vw;
+        .logoBoarding {
+            width:30vw;
+            margin:auto;
+        }
+        .catchPhraseBoarding {
+            width:33vw;
+            margin-top: 2vw;
+            margin:auto;
+        }
+    }
+    .catchphrase {
+        font-family: 'Lato', sans-serif;
+        color:#00A5D2;
+        font-style: italic; 
+        text-align:center;
+        margin-top:-4vw;
+    }
+
+    .onBoardingDescription {
+        text-align:center;
+        font-size:4vw;
+        margin-left:7vw;
+        margin-right:7vw;
+        .descriptionImportant {
+            color:#00A5D2;
+            font-weight: bold;
+        }
+    }
+
+   .onBoardingPictos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-right:2vw;
+        margin-left:2vw;
+        margin-top:8vw;
+        font-family: 'Lato', sans-serif;
+        .picto {
+            width:13vw;
+        }
+        .picto3 {
+            width:12vw;
+        }
+        .FirstPicto {
+            text-align: center;
+        }
+        .SecondPicto {
+            text-align: center;
+        }
+        .ThirdPicto {
+            text-align: center;
+            margin-top:-0.09vw;
+        }
+    }
+
+    .iconFleche {
+        text-align:center;
+        .onBoardingFleche {
+            margin-top:2vw;
+            width:15vw;
+        }
+    }
+}

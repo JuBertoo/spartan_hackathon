@@ -1,0 +1,43 @@
+
+.homePage {
+    display:grid;
+    grid-template-rows: 150vw 20vw;
+    background-color:#0A2B33;
+    height:100vh;
+     
+
+    .logoHome {
+   
+        margin: auto;
+        margin-top: 50vw;
+        
+        img{
+            display: block;
+            width: 50vw;
+        }
+        .logotop {
+            margin-bottom:4vh;
+        }
+    }
+
+    // .logoText {
+    
+    //     margin: auto;
+    //     img{
+    //         width: 70vw;
+    //     }
+    // }
+    .logoArrow {
+        // display:flex;
+        // justify-self: center;
+        // width:70%;
+        // height:70%;
+        margin: auto;
+        // margin-top: 80vw;
+        img{
+            width: 15vw;
+        }
+    }
+
+
+}

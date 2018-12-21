@@ -1,0 +1,139 @@
+.myBookingHeader {
+    h1{
+        color:white;
+        font-size: 6vw;
+    }
+    background-color:#0a2b33;
+    padding-top:0.1vw;
+    padding-bottom:0.1vw;
+    font-family: 'Lato', sans-serif;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myBookingContainer {
+    font-family: 'Lato', sans-serif;
+    color: #0a2b33;
+    height: 89vh;
+    overflow: hidden;
+    display: grid;
+    min-height: 91vh;
+
+    h3 {
+        font-size:5vw;
+    }
+    p{
+        font-size: 4vw;
+    }
+    .myBookingLavage {
+        display:grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap:1vw;
+        padding-bottom:5vw;
+        padding-top:5vw;
+        background-color: #f5f5f5;
+        .progressLavage {
+            grid-column: 1;
+            display:flex;
+            justify-content: center;
+            align-self: center;
+            .rc-progress-circle {
+                width:30vw;
+            }
+            .counterMin {
+                position: absolute;
+                margin-top:13vw;
+                color:#00a5d2;
+                font-weight: bold;
+            }
+        }
+        .LavageText {
+            grid-column: 2;
+            margin-left:2vw;
+        }
+        .buttonLavage{
+        button {
+      
+                .debloqueFalse{
+                    display: none;
+                
+            }
+                .debloqueTrue{
+                    width: 18vw;
+                    bottom: 122vw;
+                    margin-left: 12vw;
+                }
+                
+            
+          
+        }
+     }
+    }
+
+    .myBookingSechage {
+        display:grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap:1vw;
+        background-color: #ebebeb;
+        padding-bottom:5vw;
+        padding-top:5vw;
+        .progressSechage {
+            grid-column: 2;
+            display:flex;
+            justify-content: center;
+            align-self: center;
+            .rc-progress-circle {
+                width:30vw;
+            }
+            .counterMin {
+                position: absolute;
+                margin-top:13vw;
+                color:#3FC7FA;
+                font-weight: bold;
+            }
+        }
+        .SechageText {
+            grid-column: 1;
+            margin-left:4vw;
+        }
+    }
+
+    .myBookingLockers {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap:1vw;
+        background-color: #d6d6d6;
+        padding-bottom:5vw;
+        padding-top:5vw;
+        .progressLockers {
+            grid-column: 1;
+            display:flex;
+            justify-content: center;
+            align-self: center;
+            .rc-progress-line {
+                width:40vw;
+            }
+        }
+        .LockersText {
+            grid-column: 2;
+        }
+    }
+
+    .buttonBooking {
+        padding-bottom:8vw;
+        padding-top:8vw;
+        display: flex;
+        justify-content: center;
+        background-color:#c1c1c1;
+        font-family: 'Lato', sans-serif;
+        button {
+            border-radius:3vw;
+            padding:5vw;
+            font-size:3.5vw;
+            background-color: #0a2b33;
+            color: white;
+        }
+    }
+}
