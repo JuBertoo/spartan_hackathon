@@ -29,13 +29,13 @@
     grid-template-columns: 15% 70% 15%;
     
     
-    .arrow{
+    .arrow, .iconNavLink {
         width: 30px;
         height: 30px;
         display: flex;
         margin: auto;
     }
-    .user{
+    .user, .iconNavLink {
         width: 30px;
         height: 30px;
         display: flex;

@@ -24,9 +24,13 @@ export default class Booking extends Component {
     return (
       <div className="BookingContainer">
         <div className="BookingHeader">
-        <img className="arrow" src={require("../../assets/img/WiHub-11.png")}/>
+          <NavLink to={{pathname:"/map"}} className="iconNavLink">
+            <img className="arrow" src={require("../../assets/img/WiHub-11.png")}/>
+          </NavLink>
           <h1>RÉSERVER</h1>
-          <img className="user" src={require("../../assets/img/WiHub-12.png")}/>
+          <NavLink to={{pathname:"/reservations"}} className="iconNavLink">
+            <img className="user" src={require("../../assets/img/WiHub-12.png")}/>
+          </NavLink>
         </div>
         <h3 className="Title1">Selectionner la taille de votre lave-linge :</h3>
         <div class="selectMachine">
