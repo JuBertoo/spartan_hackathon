@@ -1,46 +1,71 @@
-.onBoardingTitle {
-    text-align: center;
-    background-color: blue;
-    color: white;
-    padding-top:0.1vw;
-    padding-bottom:0.1vw;
-}
-
-.onBoardingLogo {
-    padding-top: 6vw;
-    text-align: center;
-}
-
-.onBoardingDescription {
-    text-align:center;
-    margin-left:5vw;
-    margin-right:5vw;
-    padding-top: 3vw;
-    padding-bottom: 3vw;
-}
-
-.onBoardingPictos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-top: 3vw;
-    padding-bottom: 3vw;
-    .FirstPicto {
-        text-align: center;
+.onBoardingContainer {
+    min-height:100vh;
+    .onBoardingTitle {
+        h1{
+            color:white;
+            font-size: 6vw;
+        }
+        background-color:#0a2b33;
+        padding-top:0.1vw;
+        padding-bottom:0.1vw;
+        font-family: 'Lato', sans-serif;
+        height: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    .SecondPicto {
-        text-align: center;
-    }
-    .ThirdPicto {
-        text-align: center;
-    }
-}
 
-.onBoardingFleche {
-    text-align: right;
-    margin-right:5vw;
-    padding-top: 3vw;
-    padding-bottom: 3vw;
-    img {
-        width:16vw;
+    .onBoardingLogo {
+        text-align: center;
+        display:grid;
+        grid-template-rows: repeat(2,1fr);
+        margin-top:5vw;
+        .logoBoarding {
+            width:30vw;
+            margin:auto;
+        }
+        .catchPhraseBoarding {
+            width:45vw;
+            margin:auto;
+        }
+    }
+
+    .onBoardingDescription {
+        text-align:center;
+        font-size:4vw;
+        margin-left:7vw;
+        margin-right:7vw;
+        .descriptionImportant {
+            color:#00A5D2;
+            font-weight: bold;
+        }
+    }
+
+    .onBoardingPictos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-right:2vw;
+        margin-left:2vw;
+        margin-top:8vw;
+        .picto {
+            width:13vw;
+        }
+        .FirstPicto {
+            text-align: center;
+        }
+        .SecondPicto {
+            text-align: center;
+        }
+        .ThirdPicto {
+            text-align: center;
+        }
+    }
+
+    .iconFleche {
+        text-align:center;
+        .onBoardingFleche {
+            margin-top:5vw;
+            width:15vw;
+        }
     }
 }
