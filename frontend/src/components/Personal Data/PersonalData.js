@@ -93,7 +93,8 @@ export default class PersonalData extends Component {
               </label>
               <input 
                 type="text" 
-                name="firstName" 
+                name="firstName"
+                placeholder="Guillaume DIVOL"  
                 id="firstName" 
                 value={this.state.firstName}
                 onChange={(e) => this.handleChange(e)} 
@@ -114,6 +115,7 @@ export default class PersonalData extends Component {
               <input 
                 type="email" 
                 name="email" 
+                placeholder="guillaumedivol@yahoo.com" 
                 id="email" 
                 value={this.state.email}
                 onChange={(e) => this.handleChange(e)} 
@@ -133,6 +135,7 @@ export default class PersonalData extends Component {
               <input 
                 type="password" 
                 name="password" 
+                placeholder="marseille" 
                 id="password" 
                 value={this.state.password}
                 onChange={(e) => this.handleChange(e)} 
@@ -151,7 +154,8 @@ export default class PersonalData extends Component {
               </label>
               <input 
                 type="tel" 
-                name="phone" 
+                name="phone"
+                placeholder="07 83 64 20 19"  
                 id="phone" 
                 value={this.state.phone}
                 onChange={(e) => this.handleChange(e)} 
@@ -188,7 +192,7 @@ export default class PersonalData extends Component {
                       type="tel"
                       name="number"
                       className="form-control"
-                      placeholder="Card Number"
+                      placeholder="5555 6666 7777 8888"
                       pattern="[\d| ]{16,22}"
                       required
                       onChange={this.handleInputChange}
@@ -205,7 +209,7 @@ export default class PersonalData extends Component {
                       type="text"
                       name="name"
                       className="form-control"
-                      placeholder="Name"
+                      placeholder="Guillaume Divol"
                       required
                       onChange={this.handleInputChange}
                       onFocus={this.handleInputFocus}
@@ -223,7 +227,7 @@ export default class PersonalData extends Component {
                           type="tel"
                           name="expiry"
                           className="form-control"
-                          placeholder="Valid Thru"
+                          placeholder="01/21"
                           pattern="\d\d/\d\d"
                           required
                           onChange={this.handleInputChange}
@@ -242,7 +246,7 @@ export default class PersonalData extends Component {
                           type="tel"
                           name="cvc"
                           className="form-control"
-                          placeholder="CVC"
+                          placeholder="867"
                           pattern="\d{3,4}"
                           required
                           onChange={this.handleInputChange}
