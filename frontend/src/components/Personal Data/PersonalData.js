@@ -67,14 +67,16 @@ export default class PersonalData extends Component {
     const { name, number, expiry, cvc, focused, issuer, formData } = this.state;
     return (
       <div>
-        <div className="dataTitle">
-          <NavLink to={{pathname:"/booking"}}>
-              <div className="backButton">
-                  <img src={require('./left-arrow.png')}/>
-              </div>
+        <div className="dataHeader">
+          <NavLink to={{pathname:"/booking"}} className="IconLink" >
+            <img className="arrow" src={require("../../assets/img/WiHub-11.png")}/>
           </NavLink>
           <h1>INFOS PERSONNELLES</h1>
+          <NavLink to={{pathname:"/reservations"}} className="IconLink" >
+            <img className="user" src={require("../../assets/img/WiHub-12.png")}/>
+          </NavLink>
         </div>
+        
         <div className="ContactContainer">
 
           <form 
@@ -158,16 +160,11 @@ export default class PersonalData extends Component {
               
             </div>
 
-          {/* BUTTON */}
-
-            <div className="form-fields button">
-              <button 
-              className="btn btn-warning"
-              >Envoyer</button>   
-            </div>
-
           </form>
         
+
+
+
     {/* CREDIT CARD */}
           <div key="Payment">
             <div className="App-payment">
@@ -179,70 +176,94 @@ export default class PersonalData extends Component {
                 focused={focused}
                 callback={this.handleCallback}
               />
-              <form ref={c => (this.form = c)} onSubmit={this.handleSubmit}>
-                <div className="form-group">
-                  <input
-                    type="tel"
-                    name="number"
-                    className="form-control"
-                    placeholder="Card Number"
-                    pattern="[\d| ]{16,22}"
-                    required
-                    onChange={this.handleInputChange}
-                    onFocus={this.handleInputFocus}
-                  />
-                </div>
-                <div className="form-group">
-                  <input
-                    type="text"
-                    name="name"
-                    className="form-control"
-                    placeholder="Name"
-                    required
-                    onChange={this.handleInputChange}
-                    onFocus={this.handleInputFocus}
-                  />
-                </div>
-                <div className="row">
-                  <div className="col-6">
-                    <div className="form-group">
-                      <input
-                        type="tel"
-                        name="expiry"
-                        className="form-control"
-                        placeholder="Valid Thru"
-                        pattern="\d\d/\d\d"
-                        required
-                        onChange={this.handleInputChange}
-                        onFocus={this.handleInputFocus}
-                      />
+              <div className="paymentinfosContainer">
+                <form ref={c => (this.form = c)} onSubmit={this.handleSubmit} >
+                  <div className="form-group">
+                    <label 
+                      className="label" 
+                      htmlFor="Numéro">
+                      Numéro *
+                    </label>
+                    <input
+                      type="tel"
+                      name="number"
+                      className="form-control"
+                      placeholder="Card Number"
+                      pattern="[\d| ]{16,22}"
+                      required
+                      onChange={this.handleInputChange}
+                      onFocus={this.handleInputFocus}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label 
+                      className="label" 
+                      htmlFor="Nom">
+                      Nom *
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      className="form-control"
+                      placeholder="Name"
+                      required
+                      onChange={this.handleInputChange}
+                      onFocus={this.handleInputFocus}
+                    />
+                  </div>
+                  <div className="row">
+                    <div className="col-6">
+                      <div className="form-group">
+                        <label 
+                          className="label" 
+                          htmlFor="Date d'expiration">
+                          Date d'expiration *
+                        </label>
+                        <input
+                          type="tel"
+                          name="expiry"
+                          className="form-control"
+                          placeholder="Valid Thru"
+                          pattern="\d\d/\d\d"
+                          required
+                          onChange={this.handleInputChange}
+                          onFocus={this.handleInputFocus}
+                        />
+                      </div>
+                    </div>
+                    <div className="col-6">
+                      <div className="form-group">
+                        <label 
+                          className="label" 
+                          htmlFor="Crytogramme">
+                          Crytogramme *
+                        </label>
+                        <input
+                          type="tel"
+                          name="cvc"
+                          className="form-control"
+                          placeholder="CVC"
+                          pattern="\d{3,4}"
+                          required
+                          onChange={this.handleInputChange}
+                          onFocus={this.handleInputFocus}
+                        />
+                      </div>
                     </div>
                   </div>
-                  <div className="col-6">
-                    <div className="form-group">
-                      <input
-                        type="tel"
-                        name="cvc"
-                        className="form-control"
-                        placeholder="CVC"
-                        pattern="\d{3,4}"
-                        required
-                        onChange={this.handleInputChange}
-                        onFocus={this.handleInputFocus}
-                      />
-                    </div>
+                  <div className="paiementDescription">
+                    <p>Vous allez réserver une machine à laver, le transfert, le séchage & le pliage pour un lavage de 10kg le 25/12/18 à 9h30 pour un prix total TTC de 23.00 euros</p>
                   </div>
-                </div>
-                <div className="paiementDescription">
-                  <p>Vous allez réserver une machine à laver, le transfert, le séchage & le pliage pour un lavage de 10kg le 25/12/18 à 9h30 pour un prix total TTC de 23.00 euros</p>
-                </div>
-                <input type="hidden" name="issuer" value={issuer} />
-                <div className="form-fields button">
-                  <button 
-                  className="btn btn-warning"
-                  >Payer</button>   
-                </div>
-              </form>
+                  {/* <input type="hidden" name="issuer" value={issuer} /> */}
+                  <div className="form-fields button">
+                  <div className="buttonPayment">
+                    <button 
+                    className="btn btn-warning"
+                    >Payer</button>   
+                  </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
