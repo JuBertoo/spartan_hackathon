@@ -107,11 +107,12 @@
     grid-template-columns: repeat(3, 1fr);
     margin: 3vw 2vw;
     grid-gap: 2vw;
-    height: 20vw;
+    text-align:center;
+    // height: 20vw;
 
     button, .NavLinkIcon {
         border-radius:3vw;
-        padding:5vw;
+        padding:3vw;
         font-size:3.5vw;
         background-color: #0a2b33;
         color: white;
