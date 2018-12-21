@@ -146,7 +146,7 @@ export default class LaverieMap extends Component{
                 </div> 
               </div>
               <div className="modeImage">
-                <NavLink to={{pathname:"/onboarding"}} className="NavLinkIcon">
+                <NavLink to={{pathname:"/booking"}} className="NavLinkIcon">
                   <button>Laver</button>
                 </NavLink>
                 <button>Secher</button>

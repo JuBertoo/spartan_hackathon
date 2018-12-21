@@ -257,9 +257,11 @@ export default class PersonalData extends Component {
                   {/* <input type="hidden" name="issuer" value={issuer} /> */}
                   <div className="form-fields button">
                   <div className="buttonPayment">
-                    <button 
-                    className="btn btn-warning"
-                    >Payer</button>   
+                    <NavLink to={{pathname:"/recap"}} className="IconLink" >
+                      <button 
+                      className="btn btn-warning"
+                      >Payer</button>   
+                    </NavLink>
                   </div>
                   </div>
                 </form>
