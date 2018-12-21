@@ -23,13 +23,13 @@
     grid-template-columns: 15% 70% 15%;
     
     
-    .arrow{
+    .arrow, .NavLinkIcon {
         width: 30px;
         height: 30px;
         display: flex;
         margin: auto;
     }
-    .user{
+    .user, .NavLinkIcon {
         width: 30px;
         height: 30px;
         display: flex;
@@ -109,12 +109,13 @@
     grid-gap: 2vw;
     height: 20vw;
 
-    button {
+    button, .NavLinkIcon {
         border-radius:3vw;
         padding:5vw;
         font-size:3.5vw;
         background-color: #0a2b33;
         color: white;
+        border-color:transparent;
     }
 }
 

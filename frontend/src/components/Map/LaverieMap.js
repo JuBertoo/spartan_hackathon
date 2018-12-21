@@ -4,7 +4,7 @@ import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
 import laverieDatas from './laverieDatas.json'
 import { renderToStaticMarkup } from "react-dom/server";
 import { divIcon } from "leaflet";
-
+import{NavLink} from 'react-router-dom';
 import './LaverieMap.scss'
 
 const setIcon = (integer, color) => {
@@ -88,9 +88,13 @@ export default class LaverieMap extends Component{
       
       <div className="laverieMapContainer">
         <div className="laverieMapHeader">
-          <img className="arrow" src={require("../../assets/img/WiHub-11.png")}/>
-            <h1>LAVERIES AUTOUR DE MOI</h1>
+          <NavLink to={{pathname:"/onboarding"}} className="NavLinkIcon">
+            <img className="arrow" src={require("../../assets/img/WiHub-11.png")}/>
+          </NavLink>
+          <h1>LAVERIES AUTOUR DE MOI</h1>
+          <NavLink to={{pathname:"/reservations"}} className="NavLinkIcon">
             <img className="user" src={require("../../assets/img/WiHub-12.png")}/>
+          </NavLink>
         </div>
         <div className="mapContainer">
        
@@ -142,7 +146,9 @@ export default class LaverieMap extends Component{
                 </div> 
               </div>
               <div className="modeImage">
-                <button>Laver</button>
+                <NavLink to={{pathname:"/onboarding"}} className="NavLinkIcon">
+                  <button>Laver</button>
+                </NavLink>
                 <button>Secher</button>
                 <button>Deposer</button>
               </div>
