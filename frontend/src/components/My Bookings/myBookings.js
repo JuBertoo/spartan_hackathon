@@ -42,6 +42,7 @@ componentDidMount(){
     if(this.state.count >= 100){
       this.startCounter()
     }
+
     return (
       <div>
         <div className="myBookingHeader">
@@ -60,7 +61,7 @@ componentDidMount(){
               <p className="textBooking">1 lavage 10kg en cours</p>
               <div className="buttonLavage">
                 <button>
-                  DÉBLOQUER LE HUBLOT
+                <img className="debloqueTrue" src={require("../../assets/img/WiHub-13.png")}/>
                 </button>
               </div>
             </div>          

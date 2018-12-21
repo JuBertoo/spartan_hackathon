@@ -16,6 +16,11 @@
 .myBookingContainer {
     font-family: 'Lato', sans-serif;
     color: #0a2b33;
+    height: 89vh;
+    overflow: hidden;
+    display: grid;
+    min-height: 91vh;
+
     h3 {
         font-size:5vw;
     }
@@ -48,13 +53,23 @@
             grid-column: 2;
             margin-left:2vw;
         }
+        .buttonLavage{
         button {
-            border-radius:3vw;
-            padding:2vw;
-            font-size:4vw;
-            background-color: #465180;
-            color: white;
+      
+                .debloqueFalse{
+                    display: none;
+                
+            }
+                .debloqueTrue{
+                    width: 32vw;
+                    position: absolute;
+                    right: 59vw;
+                    bottom: 122vw;
+                
+            }
+          
         }
+     }
     }
 
     .myBookingSechage {
