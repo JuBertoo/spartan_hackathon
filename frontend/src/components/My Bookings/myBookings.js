@@ -15,13 +15,18 @@ export default class myBookings extends Component {
     };
   }
 componentDidMount(){
-    setInterval(() => {
-    if (this.state.count < 60) {
-      this.setState({count:this.state.count +1})
-    } else {
-      this.state.count = 0;
-    }
-    }, 600);
+  this.startCounter()
+  }
+
+  startCounter = () => {
+    this.counter = setInterval(() => {
+      if (this.state.count < 100) {
+        this.setState({count:this.state.count +1})
+      } else {
+        clearInterval(this.counter)
+        this.state.count = 0;
+      }
+      }, 1000);
   }
 
 
@@ -34,6 +39,9 @@ componentDidMount(){
       height: 'auto',
       display: 'inline-block',
     };
+    if(this.state.count >= 100){
+      this.startCounter()
+    }
     return (
       <div>
         <div className="myBookingHeader">
@@ -45,11 +53,11 @@ componentDidMount(){
               <div style={circleContainerStyle}>
               <Circle percent={this.state.count} strokeWidth="10" trailWidth="10" strokeColor={this.state.color} trailColor={"#0a2b33"} />
               </div>
-              <p className="counterMin">{this.state.count}min</p>
+              <p className="counterMin">{this.state.count}%</p>
             </div>
             <div className="LavageText">
               <h3 className="titresBooking">LAVAGE</h3>
-              <p className="textBooking">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              <p className="textBooking">1 lavage 10kg en cours</p>
               <div className="buttonLavage">
                 <button>
                   DÉBLOQUER LE HUBLOT
@@ -60,7 +68,7 @@ componentDidMount(){
           <div className="myBookingSechage">
             <div className="SechageText">
               <h3 className="titresBooking">SÉCHAGE</h3>
-              <p className="textBooking">Prochain séchage prévu dans {this.state.count}min</p>
+              <p className="textBooking">Prochain séchage prévu dans {this.state.count} min</p>
             </div>
             <div className="progressSechage">
               <div style={circleContainerStyle}>
@@ -77,7 +85,7 @@ componentDidMount(){
             </div>
             <div className="LockersText">
               <h3 className="titresBooking">DROP & PICK UP</h3>
-              <p className="textBooking">Vous utilisez un casier C2 depuis {this.state.count}min</p>
+              <p className="textBooking">Vous utilisez un casier C2 depuis {this.state.count} min</p>
             </div>            
           </div>
           <div className="buttonBooking">

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Home.scss'
+import{NavLink} from 'react-router-dom';
 
 export default class Home extends Component {
   render() {
@@ -14,7 +15,9 @@ export default class Home extends Component {
           <img src={require('./WiHub-06.png')}/>
         </div> */}
         <div className="logoArrow">
-        <img className="arrow" src={require("../assets/img/arrow-reverser.png")}/>
+          <NavLink to={{pathname:"/onboarding"}}>
+            <img className="arrow" src={require("../assets/img/arrow-reverser.png")}/>
+          </NavLink>
         </div>
       </div>
     )
